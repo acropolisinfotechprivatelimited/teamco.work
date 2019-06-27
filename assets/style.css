@@ -23,7 +23,7 @@
 .mgb-30{
     margin-bottom: 30px;
 }
-.align-center{
+.align-center {
     text-align: center;
 }
 .fz-30{
@@ -50,6 +50,9 @@
 .pdb-20{
     padding-bottom: 20px;
 }
+.pdb-40{
+    padding-bottom: 40px;
+}
 .white{
     color: #ffffff;
 }
@@ -71,13 +74,11 @@
 .pd-0-0{
     padding: 0px;
 }
-.align-center{
-    text-align: center;
-}
 
 .modern img{
     width: 100%;
     height: 350px;
+    object-fit: cover;
 }
 .service-logo{
     position: absolute;
@@ -190,8 +191,9 @@ footer .rig strong{
     max-width: 1235px;
     width: 100%;
     margin: 0px auto;
-    padding-left: 15px;
-    padding-right: 15px;
+}
+.bookOfficeSpace{
+    margin-bottom: 20px;
 }
 .bookOffice h2 {
     font-weight: 500;
@@ -272,7 +274,7 @@ article h2 {
 .expencDiv {
     width: 100%;
     float: left;
-    padding: 0px 0px 30px;
+   
 }
 .main-section {
     max-width: 1235px;
@@ -319,8 +321,9 @@ article h2 {
 }
 .price-option{
     border: 1px solid rgba(0,0,0,0.5);
-
     padding: 30px;
+    height:470px;
+    min-height: 470px;
 }
 .price-option:hover{
     background-color: #F9A02C;
@@ -493,7 +496,7 @@ input[type=text], .video-form .form-group select, .video-form .form-group textar
         position: relative;
     }
   }
-}
+
 
 
 

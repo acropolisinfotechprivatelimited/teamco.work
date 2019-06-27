@@ -184,7 +184,7 @@ jQuery(document).ready(function()
            console.log(data);
            $.ajax({
                type:"post",
-               url:"index.php",
+               url:"http://www.teamcowork.acropolisglobal.com/sendMail.php",
                data:fd,
                contentType: false,
                cache: false,
