@@ -74,7 +74,6 @@
 .align-center{
     text-align: center;
 }
-<<<<<<< HEAD
 .scroll-top-button{
     position: fixed;
     bottom: 10px;
@@ -96,13 +95,12 @@
 .scroll-top-button i{
     color: #f9a02c;
     font-size: 20px;
-=======
+}
 
 .modern img{
     width: 100%;
     height: 350px;
->>>>>>> 19846e7b1472ccf6d8be9ce58ce4675e71b69c33
-}
+    }
 .service-logo{
     position: absolute;
     top:50%;
