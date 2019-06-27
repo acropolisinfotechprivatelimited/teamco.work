@@ -23,6 +23,9 @@
 .mgb-30{
     margin-bottom: 30px;
 }
+.mgt-60{
+    margin-top: 60px;
+}
 .align-center {
     text-align: center;
 }
@@ -75,10 +78,38 @@
     padding: 0px;
 }
 
+.align-center{
+    text-align: center;
+}
+.scroll-top-button{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 5;
+    background-color:rgba(0,0,0,0.8);
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    padding: 5px 10px;
+    display: none;
+    transition: all 0.3s linear;
+    -webkit-transition:all 0.3s linear;
+    -moz-transition:all 0.3s linear;
+    
+}
+.scroll-top-button:focus,.scroll-top-button:active{
+    outline: none;
+}
+.scroll-top-button i{
+    color: #f9a02c;
+    font-size: 20px;
+}
+
 .modern img{
     width: 100%;
     height: 350px;
+
     object-fit: cover;
+
 }
 .service-logo{
     position: absolute;
@@ -113,6 +144,7 @@
 .service:hover .service-content{ 
     display: block;
     background-color: #F9A02C;
+    cursor: pointer;
     transition: all 0.3s linear;
     
 }
@@ -212,6 +244,12 @@ footer .rig strong{
     font-weight: bold;
     margin: 0 auto;
     cursor: pointer;
+}
+.talkUs:hover{
+        background-color: #F9A02C;
+        cursor: pointer;
+        color: #fff;
+
 }
 
 /* spell success started */
@@ -327,6 +365,7 @@ article h2 {
 }
 .price-option:hover{
     background-color: #F9A02C;
+    cursor: pointer;
     color: #fff;
 }
 .price-option:hover .join-now{
