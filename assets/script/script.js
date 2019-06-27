@@ -1,4 +1,18 @@
-$(".about-section").on("click",function(e)
+$(document).ready(function()
+                  {
+    $(window).on("scroll",function()
+                {
+        let top=$(this).scrollTop();
+        if(top > 10)
+            {
+                $(".top-nav").addClass("sticky");
+            }
+        else{
+              $(".top-nav").removeClass("sticky");
+            
+        }
+    })
+    $(".about-section").on("click",function(e)
 {
   
     let top=parseFloat(($("#about").offset().top)-50);
@@ -43,3 +57,4 @@ $(".talkUs").on("click",function(e)
 
 })
 }); 
+})
