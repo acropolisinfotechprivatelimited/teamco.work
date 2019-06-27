@@ -35,8 +35,52 @@ $(".pricing-section").on("click",function(e)
 
 })
 }); 
+$(".pricing-section").on("click",function(e)
+{
+  
+    let top=parseFloat(($("#pricing").offset().top)-50);
+    console.log(top);
+     $('html, body').animate({
+    scrollTop:top
+  }, 1000, function(){
+
+})
+}); 
+$(".event-section").on("click",function(e)
+{
+  
+    let top=parseFloat(($("#event").offset().top)-50);
+    console.log(top);
+     $('html, body').animate({
+    scrollTop:top
+  }, 1000, function(){
+
+})
+}); 
+$(".contact-section").on("click",function(e)
+{
+  
+    let top=parseFloat(($("#contact").offset().top)-50);
+    console.log(top);
+     $('html, body').animate({
+    scrollTop:top
+  }, 1000, function(){
+
+})
+}); 
 
 $(".home-section").on("click",function(e)
+{
+  
+    let top=parseFloat(($("#home").offset().top)-50);
+    console.log(top);
+     $('html, body').animate({
+    scrollTop:top
+  }, 1000, function(){
+
+})
+}); 
+$(".join-now").on("click",function(e)
 {
   
     let top=parseFloat(($("#home").offset().top)-50);
