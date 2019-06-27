@@ -264,7 +264,7 @@ article h2 {
 .expencDiv {
     width: 100%;
     float: left;
-    padding: 60px 0px 30px;
+    padding: 20px 0px 50px;
 }
 .main-section {
     max-width: 1235px;
@@ -377,10 +377,10 @@ article h2 {
     content: '';
     width: 53%;
     height: 300px;
-    background-color: white;
+    background-color: #fff;
     left:-32px;
-    bottom: -147px;
-    transform: rotate(10deg);
+    bottom: -167px;
+    transform: rotate(7deg);
     
     z-index: 7;
 }
@@ -389,10 +389,10 @@ article h2 {
     content: '';
     width: 53%;
     height: 300px;
-    background-color: white;
+    background-color: #fff;
     right:-32px;
-    bottom: -147px;
-    transform: rotate(-10deg);
+    bottom: -167px;
+    transform: rotate(-7deg);
      
     z-index: 7;
 }
@@ -428,7 +428,7 @@ article h2 {
     z-index: 4;
     background-color: #fff;
     padding: 10px;
-    border: 1px solid #333;
+    border: 1px solid #828282;
     
 }
 
@@ -465,7 +465,7 @@ article h2 {
     padding: 13px 30px;
     display: inline-block;
     border-radius: 8px;
-    
+    border: 0px;
 }
 
 
@@ -475,9 +475,13 @@ input[type=text], .video-form .form-group select, .video-form .form-group textar
     background-color: #19634C;
     color: #fff;
     border-radius: 0px;
+    font-size: 13px;
+    padding: 5px 12px;
 }
 
-
+input[type=text], .video-form .form-group select{
+    height: 43px;
+}
 @media screen and (max-width: 900px) {
     .header-form{
         position: relative;
@@ -496,6 +500,9 @@ input[type=text], .video-form .form-group select, .video-form .form-group textar
         .bg-orange{
             background-color: #F9A02C;
         }
+        .color-white{
+            color: #fff;
+        }
         .pagelink-container{
             text-align: end;
         }
@@ -509,8 +516,21 @@ input[type=text], .video-form .form-group select, .video-form .form-group textar
             color: #333;
             text-decoration: none;
             font-size: 20px;
-            padding: 0px 10px;
+            padding: 0px 18px;
+            transition: all 0.2s linear;
+            -webkit-transition: all 0.2s linear;
+            -moz-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
+            font-family: montserrat;
         }
+
+        .pagelink-container li a:hover{
+            color: #F9A02C;
+        }
+        .pagelink-container li.active a{
+            color: #F9A02C;
+        }
+        
         .pagelink-container,.logo-container{
             padding: 10px;
         }
@@ -528,13 +548,13 @@ input[type=text], .video-form .form-group select, .video-form .form-group textar
             position: fixed;
             top: 0;
             width: 100%;
-            height: 60px;
+            height: 65px;
             z-index: 8;
             overflow: hidden;
+           
         }
-        .color-white{
-            color: #fff;
-        }
+
+        
         .call-us > a{
             border-top-left-radius: 30px;
             border-bottom-left-radius: 30px;
