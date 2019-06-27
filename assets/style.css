@@ -23,7 +23,10 @@
 .mgb-30{
     margin-bottom: 30px;
 }
-.align-center{
+.mgt-60{
+    margin-top: 60px;
+}
+.align-center {
     text-align: center;
 }
 .fz-30{
@@ -50,6 +53,9 @@
 .pdb-20{
     padding-bottom: 20px;
 }
+.pdb-40{
+    padding-bottom: 40px;
+}
 .white{
     color: #ffffff;
 }
@@ -71,6 +77,7 @@
 .pd-0-0{
     padding: 0px;
 }
+
 .align-center{
     text-align: center;
 }
@@ -100,7 +107,14 @@
 .modern img{
     width: 100%;
     height: 350px;
+<<<<<<< HEAD
+
+    object-fit: cover;
+
+}
+=======
     }
+>>>>>>> 13f758e3d8f774e78f792389858bd10d1b02b296
 .service-logo{
     position: absolute;
     top:50%;
@@ -134,6 +148,7 @@
 .service:hover .service-content{ 
     display: block;
     background-color: #F9A02C;
+    cursor: pointer;
     transition: all 0.3s linear;
     
 }
@@ -212,8 +227,9 @@ footer .rig strong{
     max-width: 1235px;
     width: 100%;
     margin: 0px auto;
-    padding-left: 15px;
-    padding-right: 15px;
+}
+.bookOfficeSpace{
+    margin-bottom: 20px;
 }
 .bookOffice h2 {
     font-weight: 500;
@@ -232,6 +248,12 @@ footer .rig strong{
     font-weight: bold;
     margin: 0 auto;
     cursor: pointer;
+}
+.talkUs:hover{
+        background-color: #F9A02C;
+        cursor: pointer;
+        color: #fff;
+
 }
 
 /* spell success started */
@@ -292,7 +314,7 @@ article h2 {
 .expencDiv {
     width: 100%;
     float: left;
-    padding: 0px 0px 30px;
+   
 }
 .main-section {
     max-width: 1235px;
@@ -339,11 +361,13 @@ article h2 {
 }
 .price-option{
     border: 1px solid rgba(0,0,0,0.5);
-
     padding: 30px;
+    height:470px;
+    min-height: 470px;
 }
 .price-option:hover{
     background-color: #F9A02C;
+    cursor: pointer;
     color: #fff;
 }
 .price-option:hover .join-now{
@@ -550,6 +574,9 @@ input[type=text], .video-form .form-group select, .video-form .form-group textar
         display: none;
     }
   }
+<<<<<<< HEAD
+
+=======
 @media only screen and  (max-width:420px){
     
     .desktop-version{
@@ -559,6 +586,7 @@ input[type=text], .video-form .form-group select, .video-form .form-group textar
         display: block;
     }
 }
+>>>>>>> 13f758e3d8f774e78f792389858bd10d1b02b296
 
 
 
