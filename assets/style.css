@@ -74,6 +74,7 @@
 .align-center{
     text-align: center;
 }
+<<<<<<< HEAD
 .scroll-top-button{
     position: fixed;
     bottom: 10px;
@@ -95,6 +96,12 @@
 .scroll-top-button i{
     color: #f9a02c;
     font-size: 20px;
+=======
+
+.modern img{
+    width: 100%;
+    height: 350px;
+>>>>>>> 19846e7b1472ccf6d8be9ce58ce4675e71b69c33
 }
 .service-logo{
     position: absolute;
@@ -113,7 +120,7 @@
     z-index: 3;
     display: none;
     text-align: center;
-    padding:20px;
+    padding:50px;
 
 }
 .service-content h3{
@@ -128,7 +135,7 @@
 }
 .service:hover .service-content{ 
     display: block;
-    background-color: #215a89;
+    background-color: #F9A02C;
     transition: all 0.3s linear;
     
 }
@@ -321,17 +328,17 @@ article h2 {
 /* plan and pricing */
 
 .join-now{
-    color:#27db9b;
+    color: #F9A02C;
     font-size: 20px;
     text-decoration: none;
-    border: 2px solid #27db9b;
+    border: 2px solid #F9A02C;
     padding: 10px 30px;
     text-align: center;
     display: inline-block;
     border-radius: 50px;
 }
 .join-now:hover,.join-now:active,.join-now:focus{
-    color: #215a89;
+    color: #F9A02C;
     text-decoration: none;
 }
 .price-option{
@@ -340,11 +347,11 @@ article h2 {
     padding: 30px;
 }
 .price-option:hover{
-    background-color: #27db9b;
+    background-color: #F9A02C;
     color: #fff;
 }
 .price-option:hover .join-now{
-    color: #27db9b;
+    color: #F9A02C;
     background-color: #fff;
 
 }
@@ -592,3 +599,7 @@ input[type=text], .video-form .form-group select, .video-form .form-group textar
             background-color: #fff;
             text-decoration: none;
         }
+
+.orange{
+  color:#F9A02C;
+}
