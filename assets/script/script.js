@@ -1,5 +1,11 @@
 $(document).ready(function()
                   {
+    $("[name='name'],[name='email'],[name='mobile'],[name='message']").on("click",function()
+                 {
+        console.log("Hello Form");
+        $(this).text("");
+        $(this).val("");
+    })
     var area=0.5,seats=5000,center=20,cities=9,clients=200,counterSeat=0,counterCenter=0,counterClient=0;
     var seatCounterInterval=null,centerCounterInterval=null,clientCounterInterval=null;
     var updateSeatByOne=function()
@@ -65,6 +71,8 @@ $(document).ready(function()
     })
     $(".about-section").on("click",function(e)
 {
+        $(".pagelink-container li").removeClass("active");
+        $(this).addClass("active");
   
     let top=parseFloat(($("#about").offset().top)-50);
     console.log(top);
@@ -77,7 +85,8 @@ $(document).ready(function()
 
 $(".pricing-section").on("click",function(e)
 {
-  
+     $(".pagelink-container li").removeClass("active");
+        $(this).addClass("active");
     let top=parseFloat(($("#pricing").offset().top)-50);
     console.log(top);
      $('html, body').animate({
@@ -89,6 +98,8 @@ $(".pricing-section").on("click",function(e)
 $(".pricing-section").on("click",function(e)
 {
   
+       $(".pagelink-container li").removeClass("active");
+        $(this).addClass("active");
     let top=parseFloat(($("#pricing").offset().top)-50);
     console.log(top);
      $('html, body').animate({
@@ -99,6 +110,8 @@ $(".pricing-section").on("click",function(e)
 }); 
 $(".event-section").on("click",function(e)
 {
+   $(".pagelink-container li").removeClass("active");
+        $(this).addClass("active");
   
     let top=parseFloat(($("#event").offset().top)-50);
     console.log(top);
@@ -110,6 +123,8 @@ $(".event-section").on("click",function(e)
 }); 
 $(".contact-section").on("click",function(e)
 {
+       $(".pagelink-container li").removeClass("active");
+        $(this).addClass("active");
   
     let top=parseFloat(($("#contact").offset().top)-50);
     console.log(top);
@@ -122,6 +137,8 @@ $(".contact-section").on("click",function(e)
 
 $(".home-section,.scroll-top-button").on("click",function(e)
 {
+       $(".pagelink-container li").removeClass("active");
+        $(".home-section").addClass("active");
   
     let top=parseFloat(($("#home").offset().top)-50);
     console.log(top);

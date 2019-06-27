@@ -173,18 +173,15 @@ jQuery(document).ready(function()
 
            console.log("Welcome");
            $(".loading-container.page-loader").show();
-           
-           var data={
-                name:$(".name").val(),
-               mobile:$(".mobile").val(),
-               email:$(".email").val()
-           };
 
             var fd=new FormData(this);
-           console.log(data);
            $.ajax({
                type:"post",
+<<<<<<< HEAD
                url:"http://www.teamcowork.acropolisglobal.com/sendMail.php",
+=======
+               url:"http://teamcowork.acropolisglobal.com/sendmail.php",
+>>>>>>> 13f758e3d8f774e78f792389858bd10d1b02b296
                data:fd,
                contentType: false,
                cache: false,
