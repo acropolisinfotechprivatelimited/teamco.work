@@ -21,7 +21,7 @@
 
 <body>
 <div class="container-fluid">    
-    <div class="video-container row">
+    <div class="video-container row" id="home"> 
         <div class="video-section">
             <video muted loop autoplay preload="auto">
             <source src="teamcowork.mp4" type="video/mp4">
@@ -29,28 +29,28 @@
         </div>
         
         <div class="video-heading">
-            <h2 class="montserrat-bold">Redefining Workspaces</h2>
-            <p class="montserrat">For Modern Entrepreneurs</p>
+            <h2>Redefining Workspaces</h2>
+            <p>For Modern Entrepreneurs</p>
         </div>
-        
+        <form name="contact-form" method="POST">
         <div class="video-form">
-            <h2 class="text-center montserrat">BOOK YOUR OFFICE SPACE</h2>
-            <form action="">
+            <h2 class="text-center">BOOK YOUR OFFICE SPACE</h2>
+
                 <div class="form-group">
                     <div class="col-md-6">
-                        <input type="text" class="form-control montserrat" id="" value="Full Name" name="fname">
+                        <input type="text" name="name"  class="acropolis_firstname form-control" id="" value="Full Name">
                     </div>
                     <div class="col-md-6">
-                        <input type="text" class="form-control montserrat" id="" value="Email" name="lname">
+                        <input type="email"  name="email" class="acropolis_email form-control" id="" value="Email">
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-md-6">
-                        <input type="text" class="form-control montserrat" id="" value="Mobile" name="fname">
+                        <input type="text" name="mobile" class="acropolis_mobile form-control" id="" value="Mobile">
                     </div>
                     <div class="col-md-6">
-                       <select class="browser-default form-control montserrat">
-                            <option value selected="selected">Product of Interest</option>
+                       <select class="browser-default form-control">
+                            <option selected>Product of Interest</option>
                             <option value="1">serviced office</option>
                             <option value="2">co-working space</option>
                             <option value="3">Meeting Room </option>
@@ -61,17 +61,17 @@
                 
                 <div class="form-group">
                     <div class="col-md-12">
-                         <textarea class="form-control montserrat" rows="5" id="comment">Describe Your Requirement</textarea>
+                         <textarea class="form-control" rows="5" id="comment">Describe Your Requirement</textarea>
                     </div>
                 </div>
                 
                 <div class="col-md-12 text-center video-form-btn">
-                    <input type="submit" class="cstm-btn montserrat" value="Submit">
+                    <input type="submit" name="submit" class="cstm-btn" value="Submit">
                 </div>
                 
-            </form>
         
         </div>
+    </form>
         
     </div>
     
@@ -81,9 +81,9 @@
         </div>
         <div class="col-md-8 pagelink-container">
             <ul class="list list-inline">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Home</a></li>
+            <li class="about-section"><a href="#">About</a></li>
+            <li class="pricing-section"><a href="#">Pricing</a></li>
             <li><a href="#">Event</a></li>
             <li><a href="#">Contact</a></li>
             <li class="call-us"><a class="bg-orange color-white" href="#"><i class="fa fa-phone"></i>9810877767</a></li></ul>
@@ -94,8 +94,7 @@
     <!-- monu code -->
     
     
-    
-      <div class="row mg-0">
+      <div class="row " id="about">
             <article class="expencDiv">
                 <div class="main-section">
                     <div class="exprncTxt">
@@ -108,7 +107,7 @@
         </div>
                 
 
-            <div class="row mg-0">
+            <div class="row" id="">
                 <h2 class="montserrat-bold align-center fz-30 pdb-20">At the Heart of Modern Working</h2>
                 <div class="col-md-3 service ">
                     <div class="col-md-12 pd-0-0">
@@ -204,8 +203,8 @@
 <!--end spell success started-->
 
 <!-- plan & pricing-->
-<div class="container-fluid">
-        <div class="row pricing-container align-center mgb-30">
+
+        <div class="row pricing-container align-center mgb-30" id="pricing">
             <h3 class="montserrat-bold fz-30 pdb-20 align-center">Plans & Pricing</h3>
         <div class="col-md-3 align-center">
             <div class="col-md-12 price-option">
@@ -264,7 +263,7 @@
             </div>
         </div>
     </div>
-</div>
+
 <!--end plan and pricing-->
 <div class="row">
     <article class="bookOffice">
@@ -287,6 +286,8 @@
 
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="assets/script/script.js"></script>
+<script type="text/javascript" src="assets/script/form-validation.js" defer async></script>
+
 </body>
 </html>
