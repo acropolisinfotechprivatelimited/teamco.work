@@ -46,9 +46,11 @@ $(document).ready(function()
         if(top > 10)
             {
                 $(".top-nav").addClass("sticky");
+                $(".scroll-top-button").show();
             }
         else{
               $(".top-nav").removeClass("sticky");
+             $(".scroll-top-button").hide();
             
         }
         if(top >counterContainer-300)
@@ -85,7 +87,7 @@ $(".pricing-section").on("click",function(e)
 })
 }); 
 
-$(".home-section").on("click",function(e)
+$(".home-section,.scroll-top-button").on("click",function(e)
 {
   
     let top=parseFloat(($("#home").offset().top)-50);
