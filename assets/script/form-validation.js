@@ -177,11 +177,7 @@ jQuery(document).ready(function()
             var fd=new FormData(this);
            $.ajax({
                type:"post",
-<<<<<<< HEAD
-               url:"http://www.teamcowork.acropolisglobal.com/sendMail.php",
-=======
-               url:"http://teamcowork.acropolisglobal.com/sendmail.php",
->>>>>>> 13f758e3d8f774e78f792389858bd10d1b02b296
+               url:"http://teamcowork.acropolisglobal.com/sendMail.php",
                data:fd,
                contentType: false,
                cache: false,

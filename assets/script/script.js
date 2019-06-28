@@ -1,5 +1,25 @@
 $(document).ready(function()
                   {
+    $(".loading-container-speed").hide();
+    var mobile_menu=1;
+    
+    
+    /* script for mobile menu toggle button */
+    
+    $(".menu-button").on("click",function()
+                        {
+        mobile_menu++;
+        console.log(mobile_menu%2);
+        $(".mobile-menu-list").slideToggle(500);
+        if((mobile_menu%2) == 0)
+            {
+                $(".menu-button i").attr("class","fa fa-times");
+            }
+        else{
+            $(".menu-button i").attr("class","fa fa-align-justify");
+        }
+        
+    })
     $("[name='name'],[name='email'],[name='mobile'],[name='message']").on("click",function()
                  {
         console.log("Hello Form");

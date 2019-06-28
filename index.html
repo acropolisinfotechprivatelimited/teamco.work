@@ -12,6 +12,7 @@
 
   <title>Team Cowork</title>
   <meta charset="utf-8">
+    <link rel="icon" href="assets/img/favicon.png" sizes="192x192" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -20,10 +21,52 @@
 
 
 <body>
+    
+         	        <!-- loading icon comes here -->
+      	       
+   <div class="loading-container-speed">
+    <div class="loader">
+    </div>
+    <div class="message-heading center">
+        <h3 class="section-heading roboto center" style="margin:20px auto;">Loading..</h3>
+    </div>
+</div>
+    
+    
+    <!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content modal-form">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+  
+      </div>
+      <div class="modal-body check-icon">
+          <i class="fa fa-check right-icons" style="font-size:48px;color:white;"></i>
+        <p>Thankyou for query</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+
+</div>
+    </div>
+    </div>
+
+ 
     <button type="button" class="scroll-top-button"><i class="fa fa-angle-up"></i></button>
-<div class="container-fluid">    
+<div class="container-fluid">  
+    
+    <!-- opening of video container -->
+    
+    
     <div class="video-container row" id="home"> 
         <div class="black-overlay"></div>
+        <div class="triangle-container">
+        <img src="assets/img/triangle.svg" alt="triangle shape" />
+        </div>
         <div class="video-section">
             <video muted loop autoplay preload="auto">
             <source src="teamcowork.mp4" type="video/mp4">
@@ -36,7 +79,7 @@
         </div>
         
         <div class="video-form desktop-version">
-            <h2 class="text-center montserrat">BOOK YOUR OFFICE SPACE</h2>
+            <h2 class="text-center montserrat-bold">BOOK YOUR OFFICE SPACE</h2>
                 <form name="contact-form" method="POST">
                  <div class="form-group">
                     <div class="col-md-6">
@@ -76,23 +119,76 @@
     
         
     </div>
+    <!-- closing of video container -->
+    <!-- opening of contact form in moible devices -->
     
-     <div class="row top-nav">
+    <div class="row contact-form-container mobile-version">
+                <h2 class="text-center section-heading montserrat-bold">BOOK YOUR OFFICE SPACE</h2>
+                <form name="contact-form" method="POST">
+                 <div class="container form-group">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <input type="text" name="name"  class="acropolis_firstname form-control montserrat" id="" value="Full Name">
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <input type="email"  name="email" class="acropolis_email form-control montserrat" id="" value="Email">
+                    </div>
+                </div>
+                <div class="container form-group">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <input type="text" name="mobile" class="acropolis_mobile form-control montserrat" id="" value="Mobile">
+                    </div>
+                    <div class="col-md-6 col-xs-12 col-xs-12 product-interest-container">
+                       <select name="product-of-interest" class="browser-default form-control montserrat product-of-interest">
+                            <option selected>Product of Interest</option>
+                            <option value="1">serviced office</option>
+                            <option value="2">co-working space</option>
+                            <option value="3">Meeting Room </option>
+                            <option value="3">virtual office</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="container form-group">
+                    <div class="col-md-12">
+                         <textarea class="form-control montserrat message" rows="5" name="message"  id="comment">Describe Your Requirement</textarea>
+                    </div>
+                </div>
+                
+                <div class="col-md-12 text-center video-form-btn">
+                    <input type="submit" name="submit" class="cstm-btn montserrat" value="Submit">
+                </div>
+                
+            </form></div>
+    
+     <div class="row top-nav flex desktop-version">
         <div class="col-md-4 logo-container">
             <img src="logo.png" alt="Teamco.work" />
         </div>
         <div class="col-md-8 pagelink-container">
             <ul class="list list-inline">
-<<<<<<< HEAD
             <li class="active home-section"><a href="#">Home</a></li>
-=======
-            <li class="home-section active"><a href="#">Home</a></li>
->>>>>>> 13f758e3d8f774e78f792389858bd10d1b02b296
             <li class="about-section"><a href="#">About</a></li>
             <li class="pricing-section"><a href="#">Pricing</a></li>
             <li class="event-section"><a href="#">Event</a></li>
             <li class="contact-section"><a href="#">Contact</a></li>
-            <li class="call-us"><a class="bg-orange color-white" href="#"><i class="fa fa-phone"></i>9810877767</a></li></ul>
+            <li class="call-us"><a class="bg-orange color-white" href="tel:09810877767"><i class="fa fa-phone"></i>9810877767</a></li></ul>
+        </div>
+    </div>
+      <div class="row top-nav mobile-version">
+        <div class="col-sm-6 col-xs-6 mobile-logo align-center">
+            <img src="logo.png" alt="Teamco.work" />
+        </div>
+        <div class="col-sm-6 col-xs-6 mobile-menu-container align-end">
+            <button type="button" class="menu-button"><i class="fa fa-align-justify"></i></button>
+            <a class="bg-orange color-white call-us" href="tel:09810877767"><i class="fa fa-phone"></i>9810877767</a>
+          </div>
+          <div class="col-xs-12 mobile-list-container ">
+            <ul class="list mobile-menu-list">
+            <li class="active home-section"><a class="montserrat color-white fz-15" href="#">Home</a></li>
+            <li class="about-section"><a href="#" class="montserrat color-white fz-15">About</a></li>
+            <li class="pricing-section"><a  class="montserrat color-white fz-15" href="#">Pricing</a></li>
+            <li class="event-section"><a class="montserrat color-white fz-15" href="#">Event</a></li>
+            <li class="contact-section"><a class="montserrat color-white fz-15" href="#">Contact</a></li></ul>
         </div>
     </div>
     
@@ -106,22 +202,16 @@
     <!-- monu code -->
     
     
-      <div class="row " id="about">
-            <article class="expencDiv">
-                <div class="main-section">
-                    <div class="exprncTxt">
-                        <h2 class="montserrat-bold">Experience the Joy of Working</h2>
-                        <p>Our ergonomic spaces have premium fit-outs & modern amenities. Usage options are flexible, so you can rent our office spaces for months, days or even hours. And space is not a constraint, so we accommodate squads of any size. Hassle-free on-boarding & top-notch business support services get your business seamlessly settled. And locations? We are situated at prime locations in top-notch buildings across 9 prominent & metropolitan cities of India.</p>
-                    </div>
-                </div>
-            </article>
+      <div class="row pd-0-60" id="about">
+                        <h2 class="montserrat-bold section-heading pd-30-0 align-center">Experience the Joy of Working</h2>
+                        <p class="align-center montserrat fz-15  lh-30">Our ergonomic spaces have premium fit-outs & modern amenities. Usage options are flexible, so you can rent our office spaces for months, days or even hours. And space is not a constraint, so we accommodate squads of any size. Hassle-free on-boarding & top-notch business support services get your business seamlessly settled. And locations? We are situated at prime locations in top-notch buildings across 9 prominent & metropolitan cities of India.</p>
     
         </div>
                 
 
         
             <div class="row modern" id="event">
-                <h2 class="montserrat-bold align-center fz-30 mgt-60 pdb-40">At the Heart of Modern Working</h2>
+                <h2 class="montserrat-bold align-center fz-30 mgt-60 pdb-40 section-heading">At the Heart of Modern Working</h2>
                 <div class="col-md-3 service ">
                     <div class="col-md-12 pd-0-0">
                     <img src="assets/img/work-place.jpg" alt="img" >
@@ -182,38 +272,11 @@
             </div>
     
 <!-- spell success started-->
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-    <!-- opening of counter container -->
-<div class="row counter-container mg-0">
-<div class="row mg-0 spell-container">
-
-=======
-<<<<<<< HEAD
->>>>>>> 49df9899adf153879c71738c4244346a50bb742a
-<div class="row mg-0">
-<div class="row counter-container mg-0">
-<div class="row mg-0 spell-container">
->>>>>>> 13f758e3d8f774e78f792389858bd10d1b02b296
 
 <!-- opening of counter container -->
-<div class="row counter-container mg-0">
-<div class="col-md-12 mg-0 spell-container">
-<<<<<<< HEAD
-=======
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 7386db7cdff72a90900807f1aa442478d7906aa9
->>>>>>> 13f758e3d8f774e78f792389858bd10d1b02b296
->>>>>>> 49df9899adf153879c71738c4244346a50bb742a
-<article class="spellDiv">
-    <div class="spelldiv-section">
-        <div class="spellSucss">
-            <h2 class="montserrat-bold ">Numbers That Spell Success</h2>
+<div class="row counter-container">
+<div class="col-md-12 pd-30-0 spell-container">
+            <h2 class="montserrat-bold section-heading text-center">Numbers That Spell Success</h2>
             <ul class="demo">
               <li> <samp><span class="counter area">0.5</span>+</samp>
                 <p>Million Sq.<br />
@@ -240,10 +303,8 @@
                   Industry</p>
               </li>
             </ul>
-          </div>
-    </div>
-</article>
 </div>
+    </div>
 <!--end spell success started-->
 
 <!-- plan & pricing-->
