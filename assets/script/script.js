@@ -20,12 +20,6 @@ $(document).ready(function()
         }
         
     })
-    $("[name='name'],[name='email'],[name='mobile'],[name='message']").on("click",function()
-                 {
-        console.log("Hello Form");
-        $(this).text("");
-        $(this).val("");
-    })
     var area=0.5,seats=5000,center=20,cities=9,clients=200,counterSeat=0,counterCenter=0,counterClient=0;
     var seatCounterInterval=null,centerCounterInterval=null,clientCounterInterval=null;
     var updateSeatByOne=function()

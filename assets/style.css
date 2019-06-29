@@ -27,6 +27,12 @@
 .mg-0{
     margin: 0px;
 }
+.mgt-0{
+    margin-top: 0px;
+}
+.mgb-0{
+    margin-bottom: 0px;
+}
 .mgb-30{
     margin-bottom: 30px;
 }
@@ -54,6 +60,9 @@
 .fz-20{
     font-size: 20px;
 }
+.fz-24{
+    font-size: 24px;
+}
 .lh-25{
     line-height: 25px;
 }
@@ -68,6 +77,9 @@
 }
 .pdb-40{
     padding-bottom: 40px;
+}
+.pdb-60{
+    padding-bottom: 60px;
 }
 .white{
     color: #ffffff;
@@ -124,6 +136,12 @@
 }
 .pd-0-60{
     padding: 0px 60px;
+}
+.pd-60-0{
+    padding:60px 0px;
+}
+.pd-30-60{
+    padding: 30px 60px;
 }
 
 .align-center{
@@ -538,13 +556,17 @@ footer .rig strong{
 
 
 input[type=text], .video-form .form-group select, .video-form .form-group textarea, input[type=email] {
-    background-color: #19634C;
     color: #fff;
     border-radius: 0px;
     font-size: 13px;
 }
 .product-interest-container{
     margin-top: 15px;
+}
+.video-form input:focus,.video-form textarea:focus{
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 0px #fff;
 }
 
 
@@ -575,6 +597,9 @@ input[type=text], .video-form .form-group select, .video-form .form-group textar
     font-size: 25px;
    
     }
+    .price-option{
+        height: auto;
+    }
     .contact-form-container .section-heading,.service > .col-md-12,.price-option{
         margin-bottom: 15px;
     }
@@ -601,6 +626,9 @@ input[type=text], .video-form .form-group select, .video-form .form-group textar
         .bg-orange{
             background-color: #F9A02C;
         }
+.color-light-gray{
+    color: #b7babd;
+}
         .pagelink-container{
             text-align: end;
         }
@@ -634,8 +662,11 @@ input[type=text], .video-form .form-group select, .video-form .form-group textar
         .logo-container img{
             width: 320px;
         }
+.mobile-logo{
+    padding: 5px 0px;
+}
 .mobile-logo img{
-    width: 220px;
+    width: 140px;
 }
         .pagelink-container li a{
              display: flex;
@@ -729,7 +760,112 @@ input[type=text], .video-form .form-group select, .video-form .form-group textar
     color:#F9A02C;
     text-decoration: none;
 }
+#client-container,#contact{
+background-color:#0f0f0f;
+color: #fff;
+    
+}
+.client-logo-container img{
+    width: 200px;
+}
+.make-press img{
+    margin-top: -18px;
+}
 
-.orange{
-  color:#F9A02C;
+#contact .section-title{
+    padding-bottom: 30px;
+}
+.icon-container i{
+    font-size: 20px;
+    color:#F9A02C;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #F9A02C;
+    border-radius: 50px;
+}
+.icon-container img{
+    width: 60px;
+}
+.point-list{
+    padding: 0px;
+    margin: 0px;
+    padding-left: 18px;
+}
+.point-container .col-md-11{
+    padding-left: 60px;
+}
+.address-container > .col-md-12{
+    padding-bottom: 25px;
+}
+.form-container input,.form-container textarea{
+    border: 2px solid #fff;
+    background-color: #fff;
+    position: relative;
+    height: 45px;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+    -webkit-transition:all 0.3s linear;
+    -moz-transition:all 0.3s linear;
+    padding-left: 60px;
+    color: orange;
+}
+.form-container textarea{
+    height: 80px;
+}
+.form-container input:focus,.form-container textarea:focus{
+    border: 2px solid #F9A02C;
+    box-shadow: 0px 0px 0px #fff;
+    outline: none;
+}
+.form-container label{
+    position: absolute;
+    top: 13px;
+    left: 30px;
+    z-index: 2;
+}
+.form-container label i{
+    color: #333;
+    font-size: 20px;
+}
+.form-container input:focus .form-container label i,.form-container textarea:focus .form-container label i{
+    color: #F9A02C;
+}
+.contact-submit{
+    font-size: 15px;
+    padding: 8px 20px;
+    border-radius: 3px;
+    position: relative;
+    z-index: 2;
+    border: none;
+}
+.contact-submit::after{
+    content: "";
+    width: 100%;
+    height: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s linear;
+    -webkit-transition:all 0.3s linear;
+    -moz-transition:all 0.3s linear;
+    background-color: #D48825;
+    z-index: -1;
+    border-radius: 3px;
+}
+.contact-submit:hover::after{
+    height: 100%;
+}
+.video-form .formn-group > div{
+    position: relative;
+}
+.video-form label{
+    position: absolute;
+    top: 14px;
+    left: 12px;
+    z-index: 2;
+    font-size: 13px;
+    
 }
