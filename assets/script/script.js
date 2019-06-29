@@ -20,13 +20,13 @@ $(document).ready(function()
         }
         
     })
-    var area=0.5,seats=5000,center=20,cities=9,clients=200,counterSeat=0,counterCenter=0,counterClient=0;
+    var area=0.5,seats=1000,center=11,cities=8,clients=100,counterSeat=0,counterCenter=0,counterClient=0;
     var seatCounterInterval=null,centerCounterInterval=null,clientCounterInterval=null;
     var updateSeatByOne=function()
     {
         if(counterSeat < seats)
             {
-        counterSeat=counterSeat+100;
+        counterSeat=counterSeat+10;
         $(".counter.seats").text(counterSeat);
         if(counterSeat >= seats)
             {

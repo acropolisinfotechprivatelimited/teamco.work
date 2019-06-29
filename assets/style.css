@@ -63,6 +63,9 @@
 .fz-24{
     font-size: 24px;
 }
+.fz-15{
+    font-size: 15px;
+}
 .lh-25{
     line-height: 25px;
 }
@@ -385,6 +388,7 @@ footer .rig strong{
     text-align: center;
     display: inline-block;
     border-radius: 50px;
+    margin-top: 10px;
 }
 .join-now:hover,.join-now:active,.join-now:focus{
     color: #F9A02C;
@@ -393,8 +397,8 @@ footer .rig strong{
 .price-option{
     border: 1px solid rgba(0,0,0,0.5);
     padding: 30px;
-    height:470px;
-    min-height: 470px;
+    height:640px;
+    min-height: 640px;
 }
 .price-option:hover{
     background-color: #F9A02C;
@@ -775,6 +779,12 @@ color: #fff;
 #contact .section-title{
     padding-bottom: 30px;
 }
+#why-choose-us > h3,#client-container > h3{
+    cursor: pointer;
+}
+#why-choose-us .map-container,#why-choose-us .point-container,#client-container > .col-md-12{
+    display: none;
+}
 .icon-container i{
     font-size: 20px;
     color:#F9A02C;
@@ -793,6 +803,22 @@ color: #fff;
     padding: 0px;
     margin: 0px;
     padding-left: 18px;
+}
+.pricing-container .point-list li{
+    margin-bottom: 5px;
+}
+.normal-price{
+    text-decoration: line-through;
+}
+.drop-icon i{
+    transition: all 0.3s linear;
+    -webkit-transition:all 0.3s linear;
+    -moz-transition:all 0.3s linear;
+}
+.rotate{
+    transform: rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
 }
 .point-container .col-md-11{
     padding-left: 60px;
