@@ -27,6 +27,9 @@
 .mg-0{
     margin: 0px;
 }
+.mg-30-0{
+    margin: 30px 0px;
+}
 .mgt-0{
     margin-top: 0px;
 }
@@ -80,6 +83,9 @@
 }
 .pdb-40{
     padding-bottom: 40px;
+}
+.pdb-30{
+    padding-bottom: 30px;
 }
 .pdb-60{
     padding-bottom: 60px;
@@ -324,7 +330,8 @@ footer .rig strong{
 
 .spell-container ul {
     margin: 0;
-    padding: 20px 0px 0px;
+    padding: 0px 0px 0px;
+    padding-bottom: 30px;
     text-align: center;
 }
 .spell-container ul li {
@@ -335,7 +342,6 @@ footer .rig strong{
 .spell-container ul li samp {
     width: 100px;
     height: 100px;
-    background-color: #cccccc;
     display: block;
     border-radius: 50%;
     padding: 40px 0px;
@@ -344,7 +350,6 @@ footer .rig strong{
 }
 .spell-container ul li p {
     font-size: 15px;
-    color: #000;
     margin-top: 10px;
     line-height: 20px;
     text-align: center;
@@ -389,6 +394,11 @@ footer .rig strong{
     display: inline-block;
     border-radius: 50px;
     margin-top: 10px;
+    position: absolute;
+    bottom: 20px;
+    width: 70%;
+    left: 15%;
+    z-index: 1;
 }
 .join-now:hover,.join-now:active,.join-now:focus{
     color: #F9A02C;
@@ -397,9 +407,11 @@ footer .rig strong{
 .price-option{
     border: 1px solid rgba(0,0,0,0.5);
     padding: 30px;
-    height:640px;
-    min-height: 640px;
+    height:660px;
+    min-height: 660px;
+    position: relative;
 }
+
 .price-option:hover{
     background-color: #F9A02C;
     cursor: pointer;
@@ -439,6 +451,9 @@ footer .rig strong{
 }
 .pd-30-0{
     padding: 30px 0px;
+}
+.pd-30-30{
+    padding: 30px;
 }
 
 .video-container{
@@ -480,7 +495,7 @@ footer .rig strong{
 }
 .triangle-container{
     position: absolute;
-    bottom: 0;
+    bottom: -4px;
     left: 0;
     width: 100%;
     height: auto;
@@ -505,20 +520,24 @@ footer .rig strong{
     
 .video-form{
     width: 25%;
-    height: 370px;
+    height: 375px;
     position: absolute;
-    bottom: 100px;
+    bottom: 40px;
     right: 5%;
-    z-index: 4;
+    z-index: 8;
     background-color: #fff;
     padding: 10px;
     border: 1px solid #828282;;
+    border-radius: 10px;
     
 }
 
 .video-form .form-group{
 
     color: #fff;
+}
+.video-form .form-control,.video-form textarea{
+    border-radius: 5px;
 }
 
 .video-form .col-md-6, .video-form .col-md-12 {
@@ -527,7 +546,7 @@ footer .rig strong{
     
 }
 
-.video-form-btn{
+.desktop-version .video-form-btn{
     padding:30px 0;
 }
 
@@ -572,6 +591,17 @@ input[type=text], .video-form .form-group select, .video-form .form-group textar
     border: none;
     box-shadow: 0px 0px 0px #fff;
 }
+    .point-container > .col-md-12{
+        margin-bottom: 30px;
+    }
+    .contact-form-container form{
+        border: 1px solid #999;
+        padding: 30px 0px;
+        border-radius: 10px;
+    }
+.contact-form-container input,.contact-foorm-container textarea,.contact-form-container select{
+    border-radius: 8px;
+}
 
 
 
@@ -597,12 +627,14 @@ input[type=text], .video-form .form-group select, .video-form .form-group textar
        
 }
     
-    .video-heading h2,.section-heading{
+    .video-heading h2,.section-heading,.section-title,.price-option h5{
     font-size: 25px;
+        line-height: 35px;
    
     }
     .price-option{
         height: auto;
+        min-height: 100px;
     }
     .contact-form-container .section-heading,.service > .col-md-12,.price-option{
         margin-bottom: 15px;
@@ -610,13 +642,48 @@ input[type=text], .video-form .form-group select, .video-form .form-group textar
     .video-heading p{
         font-size: 15px;
     }
+    .address-container h4{
+        font-size: 16px;
+        margin-top: 10px;
+    }
     .video-section video{
         width: auto;
         height: auto;
     }
-    #event,#about,#pricing{
+    #event,#about,#pricing,#client-container{
         padding: 0px 30px;
     }
+    #why-choose-us{
+        padding: 30px 10px;
+    }
+     .point-container .col-md-11.col-sm-12 {
+        text-align: center;
+         padding: 0px;
+    }
+    .point-container .col-md-1.col-sm-12{
+        text-align: center;
+        padding-top: 30px;
+    }
+    .address-container,.form-container .form-group{
+        text-align: center;
+    }
+    .icon-container i{
+        margin: 0 auto;
+    }
+    .service-content{
+        padding: 30px 10px;
+    }
+    .join-now{
+        position: static;
+        width: 100%;
+        left: 0%;
+    }
+    #client-container h3{
+        font-size: 20px;
+    }
+    .point-container h4{
+    margin: 5px 0px;
+}
   }
 
 
@@ -764,13 +831,16 @@ input[type=text], .video-form .form-group select, .video-form .form-group textar
     color:#F9A02C;
     text-decoration: none;
 }
-#client-container,#contact{
+#client-container,#contact,.spell-container{
 background-color:#0f0f0f;
 color: #fff;
     
 }
 .client-logo-container img{
     width: 200px;
+}
+.client-logo-container.travel-ka-baap img,.client-logo-container.make-press-logo img{
+    width: 120px;
 }
 .make-press img{
     margin-top: -18px;
@@ -797,12 +867,15 @@ color: #fff;
     border-radius: 50px;
 }
 .icon-container img{
-    width: 60px;
+    width: 40px;
 }
 .point-list{
     padding: 0px;
     margin: 0px;
     padding-left: 18px;
+}
+.point-list li{
+    text-align: left;
 }
 .pricing-container .point-list li{
     margin-bottom: 5px;
@@ -887,11 +960,15 @@ color: #fff;
 .video-form .formn-group > div{
     position: relative;
 }
-.video-form label{
+.video-form label,.container.form-group label{
     position: absolute;
     top: 14px;
     left: 12px;
     z-index: 2;
     font-size: 13px;
     
+}
+.container.form-group label{
+    top: 8px;
+    left: 26px;
 }

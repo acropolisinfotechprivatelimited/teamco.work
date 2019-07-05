@@ -65,11 +65,9 @@ $(document).ready(function()
         let counterContainer=$(".counter-container").position().top;
         if(top > 10)
             {
-                $(".top-nav").addClass("sticky");
                 $(".scroll-top-button").show();
             }
         else{
-              $(".top-nav").removeClass("sticky");
              $(".scroll-top-button").hide();
             
         }

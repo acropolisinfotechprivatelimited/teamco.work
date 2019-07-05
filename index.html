@@ -12,11 +12,13 @@
 
   <title>Team Cowork</title>
   <meta charset="utf-8">
-    <link rel="icon" href="assets/img/favicon.png" sizes="192x192" />
+    <link rel="icon" href="assets/img/favcorrect.png" sizes="192x192" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" rel="stylesheet" />
 </head>
 
 
@@ -43,9 +45,9 @@
         <button type="button" class="close" data-dismiss="modal">&times;</button>
   
       </div>
-      <div class="modal-body check-icon">
-          <i class="fa fa-check right-icons" style="font-size:48px;color:white;"></i>
-        <p>Thankyou for query</p>
+      <div class="modal-body check-icon a;lign-center">
+          <i class="fa fa-check right-icons color-orange" style="font-size:48px;"></i>
+        <p class="montserrat-bold fz-30">Thankyou for query</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -97,7 +99,7 @@
                         <input type="text" name="mobile" class="acropolis_mobile form-control montserrat bg-orange" id="mobile">
                     </div>
                     <div class="col-md-6">
-                       <select name="product-of-interest" class="browser-default form-control montserrat product-of-interest bg-orange">
+                       <select name="product-of-interest" style="border-radius: 5px;" class="browser-default form-control montserrat product-of-interest bg-orange">
                             <option selected>Product of Interest</option>
                             <option value="1">serviced office</option>
                             <option value="2">co-working space</option>
@@ -110,11 +112,11 @@
                 <div class="form-group">
                     <div class="col-md-12">
                         <label for="message">Describe Your Requirement</label>
-                         <textarea class="form-control montserrat message bg-orange" rows="5" name="message"  id="comment"></textarea>
+                         <textarea style="border-radius: 5px;" class="form-control montserrat message bg-orange" rows="5" name="message"  id="comment"></textarea>
                     </div>
                 </div>
                 
-                <div class="col-md-12 text-center video-form-btn">
+                <div class="col-md-12 text-center video-form-btn" style="padding-top: 14px;">
                     <input type="submit" name="submit" class="cstm-btn montserrat" value="Submit">
                 </div>
                 
@@ -126,23 +128,26 @@
     <!-- closing of video container -->
     <!-- opening of contact form in moible devices -->
     
-    <div class="row contact-form-container mobile-version">
-                <h2 class="text-center section-heading montserrat-bold">BOOK YOUR OFFICE SPACE</h2>
+    <div class="row contact-form-container mobile-version pd-30-30">
+                <h2 class="text-center section-heading montserrat-bold color-orange pd-0-60 mgt-0">Book Your Office Space</h2>
                 <form name="contact-form" method="POST">
                  <div class="container form-group">
                     <div class="col-md-6 col-sm-6 col-xs-6">
-                        <input type="text" name="name"  class="acropolis_firstname form-control montserrat" id="" value="Full Name">
+                        <label for="name" class="color-white">Name</label>
+                        <input type="text" name="name"  class="acropolis_firstname form-control montserrat bg-orange" id="name">
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-6">
-                        <input type="email"  name="email" class="acropolis_email form-control montserrat" id="" value="Email">
+                         <label for="email" class="color-white">Email</label>
+                        <input type="email"  name="email" class="acropolis_email form-control montserrat bg-orange" id="email">
                     </div>
                 </div>
                 <div class="container form-group">
                     <div class="col-md-6 col-sm-12 col-xs-12">
-                        <input type="text" name="mobile" class="acropolis_mobile form-control montserrat" id="" value="Mobile">
+                         <label for="mobile" class="color-white">Mobile</label>
+                        <input type="text" name="mobile" class="acropolis_mobile form-control montserrat bg-orange" id="mobile">
                     </div>
                     <div class="col-md-6 col-xs-12 col-xs-12 product-interest-container">
-                       <select name="product-of-interest" class="browser-default form-control montserrat product-of-interest">
+                       <select name="product-of-interest" class="browser-default form-control montserrat product-of-interest bg-orange color-white">
                             <option selected>Product of Interest</option>
                             <option value="1">serviced office</option>
                             <option value="2">co-working space</option>
@@ -154,31 +159,23 @@
                 
                 <div class="container form-group">
                     <div class="col-md-12">
-                         <textarea class="form-control montserrat message" rows="5" name="message"  id="comment">Describe Your Requirement</textarea>
+                        <label for="message" class="color-white">Message</label>
+                         <textarea class="form-control montserrat message bg-orange color-white" rows="5" name="message"  id="comment"></textarea>
                     </div>
                 </div>
                 
-                <div class="col-md-12 text-center video-form-btn">
+                <div class="col-md-12 text-center video-form-btn" style="padding-top: 10px;">
                     <input type="submit" name="submit" class="cstm-btn montserrat" value="Submit">
                 </div>
                 
             </form></div>
     
-     <div class="row top-nav flex desktop-version">
+     <div class="row top-nav flex desktop-version sticky">
         <div class="col-md-4 logo-container">
             <img src="logo.png" alt="Teamco.work" />
         </div>
-        <div class="col-md-8 pagelink-container">
-            <ul class="list list-inline">
-            <li class="active home-section"><a href="#">Home</a></li>
-            <li class="about-section"><a href="#">About</a></li>
-            <li class="pricing-section"><a href="#">Pricing</a></li>
-            <li class="event-section"><a href="#">Event</a></li>
-            <li class="contact-section"><a href="#">Contact</a></li>
-            <li class="call-us"><a class="bg-orange color-white" href="tel:09810877767"><i class="fa fa-phone"></i>9810877767</a></li></ul>
-        </div>
     </div>
-      <div class="row top-nav mobile-version">
+      <div class="row top-nav mobile-version sticky">
         <div class="col-sm-6 col-xs-6 mobile-logo align-center">
             <img src="logo.png" alt="Teamco.work" />
         </div>
@@ -207,7 +204,7 @@
     
     
       <div class="row pd-0-60" id="about">
-                        <h2 class="montserrat-bold section-heading pd-30-0 align-center">Experience the Joy of Working</h2>
+                        <h2 class="montserrat-bold section-heading pd-30-0 align-center color-orange mg-0">Experience the Joy of Working</h2>
                         <p class="align-center montserrat fz-15  lh-30">Our ergonomic spaces have premium fit-outs & modern amenities. Usage options are flexible, so you can rent our office spaces for months, days or even hours. And space is not a constraint, so we accommodate squads of any size. Hassle-free on-boarding & top-notch business support services get your business seamlessly settled. And locations? We are situated at prime locations in top-notch buildings across 9 prominent & metropolitan cities of India.</p>
     
         </div>
@@ -215,7 +212,7 @@
 
         
             <div class="row modern" id="event">
-                <h2 class="montserrat-bold align-center fz-30 mgt-60 pdb-40 section-heading">At the Heart of Modern Working</h2>
+                <h2 class="montserrat-bold align-center fz-30 mgt-60 pdb-30 section-heading color-orange">At the Heart of Modern Working</h2>
                 <div class="col-md-3 service ">
                     <div class="col-md-12 pd-0-0">
                     <img src="assets/img/work-place.jpg" alt="img" >
@@ -279,30 +276,30 @@
 
 <!-- opening of counter container -->
 <div class="row counter-container">
-<div class="col-md-12 pd-30-0 spell-container">
-            <h2 class="montserrat-bold section-heading text-center">Numbers That Spell Success</h2>
+<div class="col-md-12 pd-0-0 mg-30-0 spell-container">
+            <h2 class="montserrat-bold section-heading text-center mg-0 pd-30-0">Numbers That Spell Success</h2>
             <ul class="demo">
-              <li> <samp><span class="counter area">100</span>+</samp>
+              <li> <samp class="bg-orange"><span class="counter area">100</span>+</samp>
                 <p>Thousand Sq.<br />
                   Ft. Area</p>
               </li>
-              <li> <samp><span class="counter seats"></span>+</samp>
+              <li> <samp class="bg-orange"><span class="counter seats"></span>+</samp>
                 <p>Seats to<br />
                   Offer</p>
               </li>
-              <li> <samp><span class="counter business-center"></span>+</samp>
+              <li> <samp class="bg-orange"><span class="counter business-center"></span>+</samp>
                 <p>Business<br />
                   Centres</p>
               </li>
-              <li> <samp><span class="counter major-cities">8</span>+</samp>
+              <li> <samp class="bg-orange"><span class="counter major-cities">8</span>+</samp>
                 <p>Major<br />
                   Cities</p>
               </li>
-              <li> <samp><span class="counter clients"></span>+</samp>
+              <li> <samp class="bg-orange"><span class="counter clients"></span>+</samp>
                 <p>Clients<br />
                   Served</p>
               </li>
-              <li> <samp><span class="counter year-in-industry">90</span>+</samp>
+              <li> <samp class="bg-orange"><span class="counter year-in-industry">90</span>+</samp>
                 <p>Event <br /> Conducted</p>
               </li>
             </ul>
@@ -313,7 +310,7 @@
 <!-- plan & pricing-->
 
         <div class="row pricing-container align-center mgb-30" id="pricing">
-            <h3 class="montserrat-bold fz-30 pdb-40 align-center">Plans & Pricing</h3>
+            <h3 class="montserrat-bold fz-30 pdb-30 mg-0 align-center color-orange">Virtual Plans & Pricing</h3>
         <div class="col-md-3 align-center">
             <div class="col-md-12 price-option">
             <h5 class="fz-35 lh-35 montserrat-bold">Virtual Reception</h5>
@@ -356,7 +353,7 @@
         </div>
         <div class="col-md-3 align-center">
             <div class="col-md-12 price-option">
-            <h5 class="fz-35 lh-35 montserrat-bold">GsT Registration</h5>
+            <h5 class="fz-35 lh-35 montserrat-bold">GST Registration</h5>
             <ul class="list list-inline">
             <li><img src="assets/rupee.svg" alt="rupees"></li>
             <li class="price-value normal-price fz-35 pdt-10 lh-25">1200</li>
@@ -369,7 +366,7 @@
             <li class="montserrat fz-15">Email forwading service</li>
                 <li class="montserrat fz-15">Client attendent and members</li>
                 <li class="montserrat fz-15">Meeting room available</li>
-                <li class="montserrat fz-15">Register your Gst using our address</li>
+                <li class="montserrat fz-15">Register your GST using our address</li>
                 <li class="montserrat fz-15">More</li></ul>
             <a href="#" class="join-now">Join Now</a>
             </div>
@@ -400,8 +397,8 @@
 
 <!--end plan and pricing-->
     <!-- opening of client container -->
-    <div class="row pd-30-0" id="client-container">
-    <h3 class="section-title montserrat-bold align-center fz-24 pdb-30">The people who have trusted us so far<span class="color-orange drop-icon" style="margin-left: 5px;"><i class="fa fa-angle-down"></i></span></h3>
+    <div class="row pd-30-0 desktop-version" id="client-container">
+    <h3 class="section-title montserrat-bold align-center fz-30 pdb-30 mgb-0">The People Who Have Trusted Us So Far<span class="color-orange drop-icon" style="margin-left: 5px;"><i class="fa fa-angle-down"></i></span></h3>
         <div class="col-md-12 align-center pd-30-0">
         <div class="col-md-3 client-logo-container">
             <img src="assets/img/tripvenza.png" alt="Trip Venza" />
@@ -417,11 +414,40 @@
         </div>
         </div>
     </div>
-    <!-- closing of client container -->
+    <!-- closing of client container desktop version-->
+    <!-- opening of client container mobile version -->
+    
+    <div class="row client-container mobile-version" id="client-container">
+      <h3 class="section-title montserrat-bold align-center fz-24 pd-30-0">The People Who Have Trusted Us So Far<span class="color-orange drop-icon" style="margin-left: 5px;"><i class="fa fa-angle-down"></i></span></h3>
+    <div class=" col-md-12 align-center pd-0-0 mgb-30 owl-carousel domain">
+        <div class="item">
+            <div class="client-logo-container">
+         <img src="assets/img/tripvenza.png" alt="Trip Venza" />
+        </div>
+        </div>
+        <div class="item">
+            <div class="client-logo-container travel-ka-baap">
+      <img src="assets/img/travel-ka-baap.png" alt="Travel Ka Baap" />
+        </div>
+        </div>
+         <div class="item">
+            <div class="client-logo-container">
+       <img src="assets/img/acropolis.png" alt="Acropolis" />
+        </div>
+        </div>
+         <div class="item">
+            <div class="client-logo-container make-press-logo">
+        <img src="assets/img/makepress.png" alt="Make Press" />
+        </div>
+        </div>
+    </div>
+    
+</div>
+<!-- closing of client-container mobile version -->
     <!-- opening of why choose us -->
     
     <div class="row pd-30-60" id="why-choose-us">
-    <h3 class="section-title montserrat-bold align-center fz-35 ">Why <span class="color-orange montserrat-bold drop-icon">Choose Us <i class="fa fa-angle-down"></i></span></h3>
+    <h3 class="section-title montserrat-bold align-center fz-30 ">Why <span class="color-orange montserrat-bold drop-icon">Choose Us <i class="fa fa-angle-down"></i></span></h3>
         
             
     <div class="col-md-4 map-container">
@@ -430,49 +456,49 @@
     
     <div class="col-md-8 point-container">
         <div class="col-md-12">
-        <div class="col-md-1 icon-container">
-        <img src="assets/img/icon.png" alt="Icon" />
+        <div class="col-md-1 col-sm-12 col-xs-12 icon-container">
+        <img src="assets/img/correct.png" alt="Icon" />
         </div>
-            <div class="col-md-11">
+            <div class="col-md-11 col-sm-12 col-xs-12">
             <h4 class="montserrat fz-20 mgt-0">100% Compliance</h4>
             <ul class="list point-list">
-            <li class="montserrat fz-13 color-light-gray">Fulfilment of all GST Deptt.Terms
+            <li class="montserrat fz-13  ">Fulfilment of all GST Deptt.Terms
               and Conditions</li>
-                <li class="montserrat fz-13 color-light-gray">Standardized and Approved
+                <li class="montserrat fz-13  ">Standardized and Approved
       Documentation Process</li>
-                <li class="montserrat fz-13 color-light-gray">Dedicated Account Managers
+                <li class="montserrat fz-13  ">Dedicated Account Managers
                for quick documentation process</li>
             </ul>
             </div>
         </div>
           <div class="col-md-12">
-        <div class="col-md-1 icon-container">
-         <img src="assets/img/icon.png" alt="Icon" />
+        <div class="col-md-1 col-sm-12 col-xs-12 icon-container">
+         <img src="assets/img/correct.png" alt="Icon" />
         </div>
-              <div class="col-md-11">
-                <h4 class="montserrat fz-20">PAN India Reach</h4>
+              <div class="col-md-11 col-xs-12 col-sm-12">
+                <h4 class="montserrat fz-20 mgt-0">PAN India Reach</h4>
                     <ul class="list point-list">
-            <li class="montserrat fz-13 color-light-gray">Registrations Provided Across
+            <li class="montserrat fz-13  ">Registrations Provided Across
          all 29 States & UT</li>
-                <li class="montserrat fz-13 color-light-gray">Very attractive pricing when applying
+                <li class="montserrat fz-13  ">Very attractive pricing when applying
          for multiple states</li>
-                <li class="montserrat fz-13 color-light-gray">Guaranteed Successful Registration
+                <li class="montserrat fz-13  ">Guaranteed Successful Registration
          or Full Refund</li>
             </ul>
               </div>
         </div>
           <div class="col-md-12">
-        <div class="col-md-1 icon-container">
-         <img src="assets/img/icon.png" alt="Icon" />
+        <div class="col-md-1 col-sm-12 col-xs-12 icon-container">
+         <img src="assets/img/correct.png" alt="Icon" />
         </div>
-              <div class="col-md-11">
-              <h4 class="montserrat fz-20">One Stop Solution</h4>
+              <div class="col-md-11 col-sm-12 col-xs-12">
+              <h4 class="montserrat fz-20 mgt-0">One Stop Solution</h4>
                     <ul class="list point-list">
-            <li class="montserrat fz-13 color-light-gray">Get Your Business Registered and apply for
+            <li class="montserrat fz-13">Get Your Business Registered and apply for
          licenses at additional charges</li>
-                <li class="montserrat fz-13 color-light-gray">Super Active Customer Support Team for
+                <li class="montserrat fz-13">Super Active Customer Support Team for
                 After-Sales Suppor</li>
-                <li class="montserrat fz-13 color-light-gray">Meeting Rooms and Workstations for your
+                <li class="montserrat fz-13">Meeting Rooms and Workstations for your
 complete Professional Workspace needs</li>
             </ul>
               </div>
@@ -485,7 +511,7 @@ complete Professional Workspace needs</li>
     
     <!-- opening of contact container -->
 <div class="row pd-30-0" id="contact">
-    <h3 class="section-title montserrat-bold align-center fz-35">Contact <span class="color-orange montserrat-bold">Us</span></h3>
+    <h3 class="section-heading montserrat-bold align-center fz-30 pdb-30">Contact <span class="color-orange montserrat-bold">Us</span></h3>
     
     <div class="col-md-6 address-container">
         <div class="col-md-12">
@@ -493,8 +519,8 @@ complete Professional Workspace needs</li>
         <i class="fa fa-map-marker"></i>
         </div>
             <div class="col-md-10">
-            <h4 class="montserrat fz-24 mgt-0">55, Lane 2, Westend Marg, Saidullajab</h4>
-            <p class="montserrat">Behind Saket Metro Station, Gate no. 2, Delhi 110030 ( Locations: Sec-3, Noida | Sec-44 Gurgaon | Ranikhet (U.K.) | Chennai | Mumbai | New Delhi | Faridabad | Bengaluru | Hyderabad | Gurugram | Pune | Noida</p></div>
+                <h4 class="montserrat fz-24 mgt-0 lh-35">Locations:</h4>
+            <h4 class="montserrat fz-24 mgt-0 lh-35">Sec-3, Noida | Sec-44 Gurgaon | Ranikhet (U.K.) | Chennai | Mumbai | New Delhi | Faridabad | Bengaluru | Hyderabad | Gurugram | Pune | Noida</h4></div>
         </div>
           <div class="col-md-12">
         <div class="col-md-2 icon-container">
@@ -516,18 +542,18 @@ complete Professional Workspace needs</li>
     </div>
     
     <div class="col-md-6 form-container">
-        <form name="contact-form" action="#" method="post">
+        <form name="inquire-form" action="#" class="inquire-form" method="post">
         <div class="col-md-12 form-group">
         <label for="name"><i class="fa fa-user"></i></label>
-        <input type="text" class="form-control" name="name" placeholder="Name" />
+        <input type="text" class="form-control inquire_firstname" name="name" placeholder="Name" />
         </div>
         <div class="col-md-12 form-group">
         <label for="email"><i class="fa fa-envelope"></i></label>
-        <input type="email" class="form-control" name="email" placeholder="Email" />
+        <input type="email" class="form-control inquire_email" name="email" placeholder="Email" />
         </div>
          <div class="col-md-12 form-group">
         <label for="mobile"><i class="fa fa-phone"></i></label>
-        <input type="text" class="form-control" name="mobile" placeholder="Mobile">
+        <input type="text" class="form-control" name="mobile inquire_mobile" placeholder="Mobile">
         </div>
         <div class="col-md-12 form-group">
         <label for="message"><i class="fa fa-pen"></i></label>
@@ -550,11 +576,33 @@ complete Professional Workspace needs</li>
 
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" defer async></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 <script src="assets/script/script.js"></script>
 <script type="text/javascript" src="assets/script/form-validation.js" defer async></script>
     <script type="text/javascript">
     $(document).ready(function()
                       {
+        
+          $('.owl-carousel').owlCarousel({
+    loop:true,
+    nav:false,
+    autoplay:true,
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:2
+        }
+    }
+})
+
         
         $("#why-choose-us > h3").on("click",function()
                                    {
@@ -578,16 +626,42 @@ complete Professional Workspace needs</li>
               let icon=$($(this).parent()).find("i");
             $(icon).css("color","#333");
         })
-          $(".video-form input,.video-form textarea").on("focus",function()
+          $(".video-form input,.video-form textarea,.contact-form-container input").on("focus",function()
                                      {
+              console.log("Focus Happen");
+              console.log($(this).val());
+                     let label=$($(this).parent()).find("label");
+            $(label).hide();  
+                  
+        })
+        /*
+          $(".video-form input").on("focusout",function()
+                                     {
+              console.log("Focus out happen");
+              let value=$($(this).val());
+              console.log(value,$(this));
               let label=$($(this).parent()).find("label");
-            $(label).hide();
+                if(value <= 0)
+                  {
+                    console.log("Value less than 0"); 
+            $(label).show();  
+                  }
+              else{
+                  console.log("Value greater than 0");
+              }
+              
         })
-          $(".video-form input,.video-form textarea").on("focusout",function()
-                                     {
-             let label=$($(this).parent()).find("label");
-            $(label).show();
-        })
+        */
+        $(document).on("blur",".video-form input,.video-form textarea,.contact-form-container input",function() {
+    var addressinput = $(this).val().length;
+    console.log(addressinput);
+              let label=$($(this).parent()).find("label");
+            if(addressinput <= 0)
+                {
+                      $(label).show(); 
+                }
+            
+});
     })
     </script>
 
