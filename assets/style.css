@@ -410,6 +410,7 @@ footer .rig strong{
     height:660px;
     min-height: 660px;
     position: relative;
+    margin-bottom: 30px;
 }
 
 .price-option:hover{
