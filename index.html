@@ -310,7 +310,7 @@
 <!-- plan & pricing-->
 
         <div class="row pricing-container align-center mgb-30" id="pricing">
-            <h3 class="montserrat-bold fz-30 pdb-30 mg-30-0 align-center color-orange">Virtual Plans & Pricing</h3>
+            <h3 class="montserrat-bold fz-30 pdb-30 mg-30-0 align-center color-orange">Virtual Office Plans & Pricing</h3>
         <div class="col-md-3 align-center">
             <div class="col-md-12 price-option">
             <h5 class="fz-35 lh-35 montserrat-bold">Virtual Reception</h5>
@@ -398,7 +398,7 @@
 <!--end plan and pricing-->
     <!-- opening of client container -->
     <div class="row pd-30-0 desktop-version" id="client-container">
-    <h3 class="section-title montserrat-bold align-center fz-30 pdb-30 mgb-0">The People Who Have Trusted Us So Far<span class="color-orange drop-icon" style="margin-left: 5px;"><i class="fa fa-angle-down"></i></span></h3>
+    <h3 class="section-title montserrat-bold align-center fz-30 pdb-30 mgb-0">The People Who Have Trusted Us So Far<span class="color-orange drop-icon" style="margin-left: 10px;"><i class="fa fa-angle-down"></i></span></h3>
         <div class="col-md-12 align-center pd-30-0">
         <div class="col-md-3 client-logo-container">
             <img src="assets/img/tripvenza.png" alt="Trip Venza" />
@@ -607,7 +607,7 @@ complete Professional Workspace needs</li>
         $("#why-choose-us > h3").on("click",function()
                                    {
             $($(this).find("i")).toggleClass("rotate");
-            $(this).toggleClass("pdb-60");
+            $(this).toggleClass("pdb-40");
             $(".map-container,.point-container").slideToggle(500);
         })
         $("#client-container > h3").on("click",function()
@@ -652,7 +652,7 @@ complete Professional Workspace needs</li>
               
         })
         */
-        $(document).on("blur",".video-form input,.video-form textarea,.contact-form-container input",function() {
+        $(document).on("blur",".video-form input,.video-form textarea,.contact-form-container input,.contact-form-container textarea",function() {
     var addressinput = $(this).val().length;
     console.log(addressinput);
               let label=$($(this).parent()).find("label");

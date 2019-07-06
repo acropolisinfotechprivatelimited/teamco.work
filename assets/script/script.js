@@ -162,14 +162,28 @@ $(".home-section,.scroll-top-button").on("click",function(e)
 }); 
 $(".join-now").on("click",function(e)
 {
-  
-    let top=parseFloat(($("#home").offset().top)-50);
+    if($(window).width() >= 1024){
+        
+  // do your stuff
+            let top=parseFloat(($("#home").offset().top)-50);
     console.log(top);
      $('html, body').animate({
     scrollTop:top
   }, 1000, function(){
 
 })
+    }
+        else{
+               let top=parseFloat(($(".contact-form-container").offset().top)-50);
+    console.log(top);
+     $('html, body').animate({
+    scrollTop:top
+  }, 1000, function(){
+
+              })
+            
+        }
+
 }); 
 $(".talkUs").on("click",function(e)
 {

@@ -120,7 +120,7 @@
     left:0;
     width:100%;
     height:100%;
-    padding:18% 15%;
+    padding:30% 15%;
     background-color:#ffffff;
     text-align:center;
     z-index:25;
@@ -161,8 +161,8 @@
 }
 .scroll-top-button{
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 30px;
+    right: 130px;
     z-index: 5;
     background-color:rgba(0,0,0,0.8);
     border: none;
